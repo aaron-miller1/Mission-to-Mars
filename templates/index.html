@@ -13,14 +13,14 @@
   <body>
     <div class="container">
       <!-- Add Jumbotron to Header -->
-      <div class="jumbotron text-center">
+      <div class="jumbotron text-center" style="color:orangered">
         <h1>Mission to Mars</h1>
         <!-- Add a button to activate scraping script -->
-        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button" style="background-color:orange">Scrape New Data</a></p>
       </div>
 
       <!-- Add section for Mars News -->
-      <div class="row" id="mars-news">
+      <div class="row" id="mars-news" style="color:orangered">
         <div class="col-md-12">
           <div class="media">
             <div class="media-body">
@@ -33,7 +33,7 @@
       </div>
 
       <!-- Section for Featured Image and Facts table -->
-      <div class="row" id="mars-featured-image">
+      <div class="row" id="mars-featured-image" style="color:orangered">
         <div class="col-md-8">
           <h2>Featured Mars Image</h2>
 
@@ -47,7 +47,7 @@
 
         <div class="col-md-4">
           <!-- Mars Facts -->
-          <div class="row" id="mars-facts">
+          <div class="row" id="mars-facts" style="color:orangered">
             <h4>Mars Facts</h4>
             {{ mars.facts | safe }}
           </div>
@@ -55,7 +55,7 @@
       </div>
 
       <!-- Section for Mars Hemispheres -->
-      <div class="row" id="mars-hemispheres">
+      <div class="row" id="mars-hemispheres" style="color:orangered">
         <div class="page-header">
           <h2 class="text-center">Mars Hemispheres</h2>
         </div>
@@ -64,7 +64,7 @@
         <div class="col-md-6">
           <div class="thumbnail">
             <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="Responsive image" class="img-responsive">
-            <div class="caption">
+            <div class="caption" style="color:orangered">
               <h3>{{hemisphere.title}}</h3>
             </div>
           </div>
